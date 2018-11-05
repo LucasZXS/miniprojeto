@@ -1,0 +1,170 @@
+
+body{
+	font-family: sans-serif;
+	margin: 0px;
+	bottom: 0px;
+
+
+
+}
+
+.Layout{
+	height: 350px;
+	padding-top: 200px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+.Layout p{
+	text-align:center;
+	color: #ffffff;
+	font-size: 2.5em;
+}
+
+.DivTexto{
+	background-color: #808080;
+}
+.teste{
+	margin-top: -340px;
+	margin-left: 0px;
+	padding: -10px;
+	color: #000000;
+	font-size: 40pt;
+}
+.teste2{
+	margin-top: -30px;
+	margin-left: 0px;
+	color: #ffffff;
+}
+.foda{
+	margin-left: -230px;
+	margin-top: -120px;
+}
+
+
+.Destaque{
+	padding: 150px 0px 600px 0px; /* box model */
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.rap{
+	margin-top: -100px;
+	margin-left: -1245px;
+	font-size: 2em;
+}
+.video{
+	margin-left: -227px;
+}
+.botao{
+	width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 1205px;
+	bottom: -100px;
+
+}
+/* MENU */
+
+nav{
+	width: 100%;
+	height: 48px;
+	background-color: #000000;
+	margin-top: 10px;
+}
+
+nav ul{
+	list-style: none;
+	margin-top: -10px;
+	text-align: center; 
+
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	color: #ffffff;
+	text-decoration: none;
+	padding: 15px;
+	display: block; /* Transforma em um bloco clicável */
+}
+
+nav ul li a:hover{
+	background-color: #00bcff;
+	transition: all 0.5%;
+}
+
+/* CONTEUDO */
+
+.imagem1{
+	text-align: center;
+	position: relative;
+	padding: 30px;
+
+}
+
+.h1sobre{
+	margin-top: 25px;
+	text-align: center;
+}
+
+.h2sobre{
+	position: relative;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 25px;
+	font-size: 0.775em;
+	padding: 20px;
+}
+
+.h3sobre{
+	margin-top: 25px;
+	margin-left: 150px;
+	margin-right: 150px;
+	position: relative;
+	padding: 20px;
+	font-size: 0.985em;
+
+}
+
+/* FORMULARIO DE CONTATO */
+#contato{
+	width: 60%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius:5px;
+	border: 1px solid: #ff0000;
+	margin-bottom: 20px;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 80px 10px;
+	border-radius:5px;
+	border: 1px solid: #ff0000;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid: #ffffff;
+	padding: 10px 25px 10px 25px;
+	color: #000000;
+}
+
+/* FIM DO FORMULARIO CONTATO */
+
