@@ -267,41 +267,30 @@ footer{
 	margin-top: 310px;
 }
 
-/* carrosel */
+/* SOCIAL */
 
- .slider label {
-     background-color: #000;
-     bottom: 10px;
-     cursor: pointer;
-    display: block;
-    height: 10px;
-     position: absolute;
-     width: 10px;
-     z-index: 10;
- }
+.social{
+	position: fixed;
+	right: 0;
+	top: 200px;
+	z-index: 2000;
+}
 
- .slider li:nth-child(1) label {
-     left: 10px;
- }
+.social ul{
+	list-style: none;
+}
 
- .slider li:nth-child(2) label {
-     left: 40px;
- }
+.social ul li a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
+}
 
- .slider li:nth-child(3) label {
-     left: 70px;
- } 
+.icon-facebook{
 
- .slider img {
-     opacity: 0;
-     visibility: hidden;
- }
+}
 
- .slider li input:checked ~ img {
-     opacity: 1;
-     visibility: visible;
-     z-index: 10;
- } 
 
+/* FIM DO SOCIAL */
 
 
