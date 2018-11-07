@@ -44,7 +44,7 @@ body{
 
 
 .Destaque{
-	padding: 150px 0px 600px 0px; /* box model */
+	padding: 150px 0px 250px 0px; /* box model */
 	max-width: 1024px;
 	margin: 0 auto;
 }
@@ -68,7 +68,19 @@ body{
 	text-align: center;
 	right: 1205px;
 	bottom: -100px;
-
+}
+.botao2{
+	width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 1205px;
+	bottom: -630px;
 }
 /* MENU */
 
@@ -82,7 +94,8 @@ nav{
 nav ul{
 	list-style: none;
 	margin-top: -10px;
-	text-align: center; 
+	text-align: center;
+	margin-right: 55px; 
 
 }
 
@@ -98,7 +111,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-	background-color: #00bcff;
+	background-color:#FF0000;
 	transition: all 0.5%;
 }
 
@@ -167,4 +180,128 @@ nav ul li a:hover{
 }
 
 /* FIM DO FORMULARIO CONTATO */
+
+/****** Pagina dos pecados ******/
+
+.meliodas{
+	padding: 10px;
+	margin-left: 620px;
+}
+
+.ban{
+	margin-left: 300px;
+	padding: 10px;
+}
+
+.diane{
+	padding: 10px;
+	margin-left: 300px;
+}
+
+
+/***** fim página dos pecados *******/	
+
+/* LOGO */
+
+.logo{
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	float: left; 
+	margin-top: -2px;
+}
+
+/* FIM DO LOGO */
+
+/* botao voltar ao topo */
+.voltar-ao-topo {
+           width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 1425px;
+	bottom: -2000px;
+        }
+        .voltar-ao-topo:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+
+.voltar-ao-topo1 {
+           width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 1465px;
+	bottom: -15600px;
+        }
+        .voltar-ao-topo:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+/* botao voltar ao topo */
+
+/*RODAPÉ*/
+footer{
+	width: 100%;
+	background-color: #000000;
+	margin-top: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.rodape{
+	margin-top: 310px;
+}
+
+/* carrosel */
+
+ .slider label {
+     background-color: #000;
+     bottom: 10px;
+     cursor: pointer;
+    display: block;
+    height: 10px;
+     position: absolute;
+     width: 10px;
+     z-index: 10;
+ }
+
+ .slider li:nth-child(1) label {
+     left: 10px;
+ }
+
+ .slider li:nth-child(2) label {
+     left: 40px;
+ }
+
+ .slider li:nth-child(3) label {
+     left: 70px;
+ } 
+
+ .slider img {
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ .slider li input:checked ~ img {
+     opacity: 1;
+     visibility: visible;
+     z-index: 10;
+ } 
+
+
 
