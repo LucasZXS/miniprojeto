@@ -4,23 +4,41 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/estiloso.css">
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 </head>
 <body>
 	<!-- MENU -->
-	<nav>
-		<ul>
-			<img class="logo" src="imagens/logo.jpg" alt="escanor">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Sobre</a></li>
-			<li><a href="conteudo.html">Conteúdo</a></li>
-			<li><a href="contato.html">Contato</a></li>
-			<li><a href="pecados.html">Os Pecados</a></li>
+	<!-- inicio do navbar -->
+        <nav class="black darken-4">
+                <div class="nav-wrapper">
+                  <a href="index.html" class="brand-logo"><img src="imagens/logo.jpg" width="30"></a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="conteudo.html">Conteúdo</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="pecados.html">Pecados</a></li>
+                  </ul>
+                </div>
+              </nav>
+            
+              <ul class="sidenav black" id="mobile-demo">
+                <li><a style="color: white" href="index.html">Home</a></li>
+                <li><a style="color: white" href="sobre.html">Sobre</a></li>
+                <li><a style="color: white" href="conteudo.html">Conteúdo</a></li>
+                <li><a style="color: white" href="contato.html">Contato</a></li>
+                <li><a style="color: white" href="pecados.html">Pecados</a></li>
+              </ul>
+        <!-- fim do navbar -->
 
-		</ul>
-
-	</nav>
+        
 	<div class="Layout" style="background-image:url('imagens/escanor11.jpg');">
-	<p>Pecado do Orgulho do Leão</p>
+	<p style="margin-top: -45px;">Pecado do Orgulho do Leão</p>
 	</div>
 
 	
@@ -41,21 +59,17 @@
 
 	<div class="DivTexto">
 		<div class="Destaque">
-			<img class="foda" src="imagens/nanatsu.png" alt="">
+			<img class="foda2" src="imagens/nanatsu.png" alt="">
 
-			<h2 class="teste">Nanatsu No Taizai </h2>
+			<h2 class="teste">Os Sete Pecados Capitais </h2>
 
-			<p class="teste2"> Nanatsu no Taizai , também conhecido como The Seven Deadly Sins no Ocidente, é uma série de mangá escrita e ilustrada por Nakaba Suzuki. Começou a ser serializada na revista Weekly Shonen Magazine da Kodansha em outubro de 2012. O mangá apresenta um cenário semelhante ao da Idade Média Europeia, com um grupo principal de cavaleiros que representam os sete pecados capitais.
-
-	Em janeiro de 2015, o mangá Nanatsu no Taizai vendeu mais de dez milhões de cópias. O anime foi produzido pelo estúdio A-1 Pictures e foi transmitido no Japão na JNN e MBS entre 5 de outubro de 2014 até 29 de março de 2015. No Brasil o mangá é publicado pela Editora JBC desde março de 2015. Em setembro de 2015 o anime foi lançado no catálogo da Netflix no Brasil e em Portugal.
-
-	Os Sete Pecados Capitais são um grupo de cavaleiros que vivem na região de Britânia, mas se separaram, porque foram acusados de tentar derrubar o Reino de Liones, Rionesu. Sua suposta derrota chegou pelas mãos dos Cavaleiros Sagrados, mas os rumores que eles ainda estavam vivos, continuaram a persistir. Dez anos depois, os Cavaleiros Sagrados encenaram um golpe de Estado e capturaram o Rei, tornando-se os novos governantes tiranos do Reino. A terceira princesa, Elizabeth, começou uma jornada para encontrar os Sete Pecados Capitais, para conseguir sua ajuda e retomar novamente seu Reino.</p>
+			<p class="teste2"> Os Sete Pecados Capitais são um grupo de cavaleiros que vivem na região de Britânia,<br> mas se separaram, porque foram acusados de tentar derrubar o Reino de Liones. <br> Sua suposta derrota chegou pelas mãos dos Cavaleiros Sagrados, mas os rumores que eles ainda estavam vivos, <br> continuaram a persistir. Dez anos depois, os Cavaleiros Sagrados encenaram um golpe de Estado e capturaram o Rei, <br>tornando-se os novos governantes tiranos do Reino. A terceira princesa, Elizabeth, começou uma jornada para <br> encontrar os Sete Pecados Capitais, para conseguir sua ajuda e retomar novamente seu Reino.</p>
 		</div>
-			<a class="botao2" href="pecados.html">Ver Detalhes</a>
+			<a class="botao2" href="pecados.html">Personagens</a>
 	</div>
 
 	<div class="Layout" style="background-image: url('imagens/fundo.jpg');">
-	<p>Nanatsu no Taizai</p>
+	<p style="margin-top: -45px;">Nanatsu no Taizai</p>
 	</div>
 
 	<div class="DivTexto">
@@ -80,10 +94,21 @@
 	<a href="index.html" class="voltar-ao-topo">Voltar ao topo</a>
 
 	<!-- rodapé -->
-		<footer>
+		<footer class="rodape1">
 			<p>©2018 - Lucas Soares Vieira</p>			
 		</footer>
 
 	<script src="js/topo.js"></script>
+	<!-- importando a biblioteca do jquery-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <!-- Chamada da função do menu lateral(sidemenu)-->
+<script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
 </body>
 </html>
