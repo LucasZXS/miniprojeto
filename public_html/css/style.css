@@ -8,6 +8,10 @@ body{
 
 }
 
+img{
+	max-width: 100%;
+}
+
 .Layout{
 	height: 350px;
 	padding-top: 200px;
@@ -37,6 +41,11 @@ body{
 	margin-left: 0px;
 	color: #ffffff;
 }
+.testee2{
+	margin-top: 10px;
+	margin-left: 0px;
+	color: #ffffff;
+}
 .foda{
 	margin-left: -230px;
 	margin-top: -120px;
@@ -55,8 +64,9 @@ body{
 }
 .rap{
 	margin-top: -100px;
-	margin-left: -1245px;
+	margin-left: -230px;
 	font-size: 2em;
+
 }
 .video{
 	margin-left: -227px;
@@ -72,7 +82,7 @@ body{
 	position: absolute;
 	text-align: center;
 	right: 1205px;
-	bottom: 60px;
+	bottom: -120px;
 }
 .botao2{
 	width: 100px;
@@ -85,41 +95,98 @@ body{
 	position: absolute;
 	text-align: center;
 	right: 1205px;
-	bottom: -450px;
+	bottom: -670px;
 }
 /* MENU */
 
-/*nav{
-	width: 100%;
-	height: 48px;
-	background-color: #000000;
-	margin-top: 10px;
+.side-menu-wrapper { /* style menu wrapper */
+	background: rgba(0,0,10,.95);
+	padding: 40px 0 0 40px;
+	position: fixed; /* Fixed position */
+	top: 0;
+	left: 0; /* Sidebar initial position. "right" for right positioned menu */
+	height: 100%;
+	z-index: 2;
+	transition: 0.5s; /* CSS transition speed */
+	width: 200px;
+	font: 20px "Courier New", Courier, monospace;
+	box-sizing: border-box;
+
 }
 
-nav ul{
-	list-style: none;
-	margin-top: -10px;
-	text-align: center;
-	margin-right: 55px; 
+.side-menu-wrapper > ul{ /* css ul list style */
+	list-style:none;
+	padding:0;
+	margin:0;
+    overflow-y: auto; /* enable scroll for menu items */
+	height:95%;
 
 }
-
-nav ul li{
-	display: inline-block;
-}
-
-nav ul li a{
-	color: #ffffff;
+.side-menu-wrapper > ul > li > a { /* links */
+    display: block;
+    border-bottom: 1px solid #131313;
+    padding: 6px 4px 6px 4px;
+    color: #ffffff;
+    transition: 0.3s;
 	text-decoration: none;
-	padding: 15px;
-	display: block; /* Transforma em um bloco clicável 
+
+}
+.side-menu-wrapper > a.menu-close { /* close button */
+    padding: 8px 0 4px 23px;
+    color: #ffffff;
+    display: block;
+    margin: -30px 0 -10px -20px;
+    font-size: 35px;
+    text-decoration: none;
+
+}
+
+
+.menu-overlay { /* overlay */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+
+.menu-open{
+	    display:block;
+		background-color: #000000;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 15px;
+}
+
+/* Classe usada pelo JS para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+nav li:hover ul{
+	display: none;
+
 }
 
 nav ul li a:hover{
-	background-color:#FF0000;
-	transition: all 0.5%;
+	background-color: #00bfff;
+	transition: all 0.27s; /* efeito transição (0 a 1) */
+	
 }
-*/
+
+
+
+/* FIM DO MENU */
+
 /* CONTEUDO */
 
 .imagem1{
@@ -208,13 +275,12 @@ nav ul li a:hover{
 
 /* LOGO */
 
-.logo{
-	color: #fff;
-	height: 50px;
-	line-height: 50px;
-	font-size: 24px;
-	float: left; 
-	margin-top: -2px;
+.Logo{
+	background-color:#000000;
+}
+.logo2{
+	margin-left: 15px;
+	margin-top: 10px;
 }
 
 /* FIM DO LOGO */
@@ -231,7 +297,7 @@ nav ul li a:hover{
 	position: absolute;
 	text-align: center;
 	right: 1425px;
-	bottom: -1700px;
+	bottom: -2000px;
         }
         .voltar-ao-topo:hover {
             background-color: rgba(0, 0, 0, 0.6);
@@ -425,32 +491,42 @@ margin-left: -20px;
 /* Home rensponsivo */
 
 .teste{
-	margin-top: -340px;
-	margin-left: 210px;
+	margin-top: 10px;
+	margin-left: 150px;
 	padding: -10px;
 	color: #000000;
 	font-size: 40pt;
 }
 .teste2{
-	margin-top: 10px;
-	margin-left: 210px;
+	margin-top: -20px;
+	margin-left: 60px;
+	color: #ffffff;
+
+}
+.testee2{
+	margin-top: -20px;
+	margin-left: 50px;
 	color: #ffffff;
 
 }
 .foda{
-	margin-left: 0px;
+	margin-left: 40px;
 	margin-top: -120px;
+	width: 400px;
+	height: 400px;
 }
 .foda2{
-	margin-left: -230px;
-	margin-top: -90px;
+	margin-left: 40px;
+	margin-top: -200px;
+	width: 400px;
+	height: 400px;
 }
 
 /* SOCIAL */
 
 .social{
 	position: fixed;
-	left: 0;
+	left: -40px;
 	top: 200px;
 	z-index: 2000;
 }
@@ -480,8 +556,8 @@ margin-left: -20px;
 	font-size: 0.875em;
 	position: absolute;
 	text-align: center;
-	right: 130px;
-	bottom: -80px;
+	right: 320px;
+	bottom: -680px;
 }
 .botao2{
 	width: 100px;
@@ -493,29 +569,190 @@ margin-left: -20px;
 	font-size: 0.875em;
 	position: absolute;
 	text-align: center;
-	right: 1205px;
-	bottom: -450px;
+	right: 320px;
+	bottom: -1740px;
+}
+.video{
+	margin-left: 0px;
+}
+.rap{
+	text-align: right;
+	margin-right: 100px;
 }
 
+/* botao voltar ao topo */
+.voltar-ao-topo {
+           width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	left: 180px;
+	bottom: -3000px;
+        }
+        .voltar-ao-topo:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.voltar-ao-topo1 {
+           width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 1465px;
+	bottom: -16137px;
+        }
+        .voltar-ao-topo:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
 
 }	
 
+/************* Smartphone 768 ***************/
 
+@media screen and (max-width: 768px){
+
+/* Página dos pecados */
+.meliodas{
+	margin-left: 35px;
+}
+.ban{
+	float: right;
+	margin-right: 25px;
+	margin-top: -420px;
+
+}
+.merlin{
+	margin-left: 45px;
+}
+.king{
+	margin-left: 75px;
+}
+.diane{
+	margin-left: 25px;
+}
+.gowther{
+	margin-left: 65px;
+
+}
+.escanor{
+	margin-left: 65px;
+}
+
+/* Home rensponsivo */
+
+.teste{
+	margin-top: 10px;
+	margin-left: 150px;
+	padding: -10px;
+	color: #000000;
+	font-size: 40pt;
+}
+.teste2{
+	margin-top: -20px;
+	margin-left: 60px;
+	color: #ffffff;
+
+}
+.testee2{
+	margin-top: -20px;
+	margin-left: 50px;
+	color: #ffffff;
+
+}
+.foda{
+	margin-left: 180px;
+	margin-top: -120px;
+	width: 400px;
+	height: 400px;
+}
+.foda2{
+	margin-left: 180px;
+	margin-top: -200px;
+	width: 400px;
+	height: 400px;
+}
+
+/* Botao */
+.botao{
+	width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 320px;
+	bottom: -655px;
+}
+.botao2{
+	width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 320px;
+	bottom: -1570px;
+}
+.video{
+	margin-left: 150px;
+
+}
+.rap{
+	text-align: right;
+	margin-right: 250px;
+}
+
+/* botao voltar ao topo */
+.voltar-ao-topo {
+           width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	left: 350px;
+	bottom: -2820px;
+        }
+        .voltar-ao-topo:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+
+.voltar-ao-topo1 {
+           width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 1465px;
+	bottom: -16137px;
+        }
+        .voltar-ao-topo:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+}

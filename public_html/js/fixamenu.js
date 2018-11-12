@@ -7,10 +7,10 @@
  // este exemplo mostra o jQuery atuando diretamente no CSS
  // a linha abaixo obtem as coordenadas do objeto identificado pela classe .Menu e armazena estas coordenadas na variável posição
  //.offset().top -> distância do objeto até o topo da página
- var posicao = $('.Menu').offset().top;
+ var posicao = $('.menu').offset().top;
  // a linha abaixo cria uma variável para manipular a classe que fixa o menu (Fixar) dentro do CSS
  //Fixar -> Menu
- var $meuMenu = $('.Menu');
+ var $meuMenu = $('.menu');
  $(document).ready(function(){
 	// função jQuery que manipula o scroll
 	$(document).on('scroll', function(){

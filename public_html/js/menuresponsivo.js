@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});
  	//solução do 2° nível mobile
 	$('.Detalhes').click(function(){
-		if($(window).width() <= 480){//só aplicar este efeito no mobile
+		if($(window).width() <= 1600){//só aplicar este efeito no mobile
 			$('nav li:hover ul').slideToggle();
 		}
 	});
