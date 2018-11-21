@@ -763,6 +763,37 @@ footer{
 	right: 680px;
 	bottom: -1440px;
 }
+/* Página dos pecados */
+.meliodas{
+	margin-left: 500px;
+}
+.ban{
+	margin-left: 700px;
+	margin-right: 160px;
+	margin-top: -20px;
+}
+.merlin{
+	margin-left: 295px;
+}
+.king{
+	margin-left: 95px;
+}
+.diane{
+	margin-left: 295px;
+	margin-right: 195px;
+	margin-top: -800px;
+	float: left;
+}
+.gowther{
+	margin-left: 295px;
+
+}
+.escanor{
+	margin-left: 715px;
+	margin-top: -390px;
+	margin-bottom: 20px;
+}
+
 }
 /************* Smartphone ***************/
 
