@@ -11,8 +11,8 @@
 	 
 	//Configurações do email, ajustar conforme necessidade
 	
-	$email_destinatario = "vitorz00124@gmail.com"; // qualquer email pode receber os dados
-	$email_assunto = "Contato do site uchihas";
+	$email_destinatario = "lucas_soavieira@hotmail.com"; // qualquer email pode receber os dados
+	$email_assunto = "Contato do site";
 	
 	 
 	//Monta o Corpo da Mensagem
