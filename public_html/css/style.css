@@ -575,7 +575,14 @@ footer{
 
 .teste{
 	margin-top: 10px;
-	margin-left: 150px;
+	margin-left: 270px;
+	padding: -10px;
+	color: #000000;
+	font-size: 40pt;
+}
+.testee{
+	margin-top: 10px;
+	margin-left: 190px;
 	padding: -10px;
 	color: #000000;
 	font-size: 40pt;
@@ -679,6 +686,84 @@ footer{
 
 }
 
+@media screen and (max-width: 1366px){
+
+/* Home rensponsivo */
+
+.teste{
+	margin-top: 10px;
+	margin-left: 350px;
+	padding: -10px;
+	color: #000000;
+	font-size: 40pt;
+}
+.testee{
+	margin-top: 10px;
+	margin-left: 220px;
+	padding: -10px;
+	color: #000000;
+	font-size: 40pt;
+}
+.teste2{
+	margin-top: -20px;
+	margin-left: 120px;
+	color: #ffffff;
+
+}
+.testee2{
+	margin-top: -20px;
+	margin-left: 50px;
+	color: #ffffff;
+
+}
+.foda{
+	margin-left: 250px;
+	margin-top: -120px;
+	width: 400px;
+	height: 400px;
+}
+.foda2{
+	margin-left: 250px;
+	margin-top: -200px;
+	width: 400px;
+	height: 400px;
+}
+
+.video{
+	margin-left: 250px;
+}
+.rap{
+	margin-left: 350px;
+}
+
+/* Botao */
+.botao{
+	width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 680px;
+	bottom: -680px;
+}
+.botao2{
+	width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 680px;
+	bottom: -1440px;
+}
+}
 /************* Smartphone ***************/
 
 @media screen and (max-width: 480px){
@@ -804,6 +889,13 @@ margin-left: -20px;
 /* Home rensponsivo */
 
 .teste{
+	margin-top: 10px;
+	margin-left: 150px;
+	padding: -10px;
+	color: #000000;
+	font-size: 40pt;
+}
+.testee{
 	margin-top: 10px;
 	margin-left: 150px;
 	padding: -10px;
